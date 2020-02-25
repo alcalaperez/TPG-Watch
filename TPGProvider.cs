@@ -8,7 +8,7 @@ using TPG.Model;
 
 namespace TPG
 {
-    class RESTCall
+    class TPGProvider
     {
         public static async Task<RootObject> CallArretsAsync()
         {

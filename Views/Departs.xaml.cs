@@ -24,7 +24,7 @@ namespace TPG
 
         protected override async void OnAppearing()
         {
-            DepartsModel departures = await RESTCall.DesparturesAsync(conexion.codeArret);
+            DepartsModel departures = await TPGProvider.DesparturesAsync(conexion.codeArret);
 
             foreach (ProchainDepart prochDep in departures.prochainsDeparts.prochainDepart)
             {

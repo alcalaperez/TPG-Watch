@@ -23,7 +23,7 @@ namespace TPG
 
         protected override async void OnAppearing()
         {
-            RootObject arrets = await RESTCall.CallArretsAsync();
+            RootObject arrets = await TPGProvider.CallArretsAsync();
             conexionList = arrets.connexions.connexion.OrderBy(o => o.nomArret).ToList();
             mylist.ItemsSource = conexionList;
             loadingState(false);

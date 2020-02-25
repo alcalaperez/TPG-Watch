@@ -18,7 +18,7 @@ namespace TPG
 
         protected override async void OnAppearing()
         {
-            TimetableModel timetable = await RESTCall.TimetableAsync(proDep);
+            TimetableModel timetable = await TPGProvider.TimetableAsync(proDep);
             mylist.ItemsSource = timetable.prochainsDeparts.prochainDepart;
             loadingState(false);
             base.OnAppearing();
