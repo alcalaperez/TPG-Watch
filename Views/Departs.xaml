@@ -12,26 +12,26 @@
                     x:Name="mylist"
                     ItemTapped="OnItemTapped"
                     ItemsSource="{Binding .}">
-                    <w:CircleListView.Header>
-                        <x:String>TITLE</x:String>
-                    </w:CircleListView.Header>
-                    <w:CircleListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextCell Text="{Binding departString}" Detail="{Binding detailString}"/>
-                        </DataTemplate>
-                    </w:CircleListView.ItemTemplate>
-                    <w:CircleListView.HeaderTemplate>
-                        <DataTemplate>
-                            <Label
-                                 HeightRequest="120"
-                                FontSize="10"
-                        FontAttributes="Bold"
-                        HorizontalTextAlignment="Center"
-                        Text="Next departures"
-                        TextColor="Orange" />
-                        </DataTemplate>
-                    </w:CircleListView.HeaderTemplate>
-                </w:CircleListView>
-            </StackLayout>
+                <w:CircleListView.Header>
+                    <x:String>TITLE</x:String>
+                </w:CircleListView.Header>
+                <w:CircleListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding departString}" Detail="{Binding detailString}"/>
+                    </DataTemplate>
+                </w:CircleListView.ItemTemplate>
+                <w:CircleListView.HeaderTemplate>
+                    <DataTemplate>
+                        <Label
+                            HeightRequest="120"
+                            FontSize="10"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            Text="Next departures"
+                            TextColor="Orange" />
+                    </DataTemplate>
+                </w:CircleListView.HeaderTemplate>
+            </w:CircleListView>
+        </StackLayout>
     </w:CirclePage.Content>
 </w:CirclePage>

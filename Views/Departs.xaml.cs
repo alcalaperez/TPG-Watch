@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
-using Tizen.Wearable.CircularUI.Forms;
+﻿using Tizen.Wearable.CircularUI.Forms;
 using TPG.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,7 +14,7 @@ namespace TPG
         {
             this.conexion = conexion;
             InitializeComponent();
-            loadingState(true);          
+            loadingState(true);
         }
 
         protected override async void OnAppearing()
@@ -42,7 +37,7 @@ namespace TPG
             loading.IsVisible = load;
             mylist.IsVisible = !load;
         }
-        
+
         async void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)

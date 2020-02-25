@@ -13,7 +13,7 @@ namespace TPG
         {
             this.proDep = proDep;
             InitializeComponent();
-            loadingState(true);            
+            loadingState(true);
         }
 
         protected override async void OnAppearing()

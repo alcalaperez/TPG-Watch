@@ -21,11 +21,13 @@
                 </w:CircleListView.ItemTemplate>
                 <w:CircleListView.HeaderTemplate>
                     <DataTemplate>
-                        <Label
-                        FontAttributes="Bold"
-                        HorizontalTextAlignment="Center"
-                        Text="Tram Line number"
-                        TextColor="Red" />
+                        <Label                                
+                            HeightRequest="120"                            
+                            FontSize="10"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            Text="Today´s departures"
+                            TextColor="Orange" />
                     </DataTemplate>
                 </w:CircleListView.HeaderTemplate>
             </w:CircleListView>

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TPG.Model
 {
@@ -15,15 +12,19 @@ namespace TPG.Model
         public string transporteurs { get; set; }
         public object ligne { get; set; }
         public object ligneTech { get; set; }
-        public string transporteur { get; set; }        
-        public string ligneFormat { 
-            get {
-                if(lignes != null && lignes != "")
+        public string transporteur { get; set; }
+        public string ligneFormat
+        {
+            get
+            {
+                if (lignes != null && lignes != "")
                 {
                     return lignes;
                 }
                 return ligne.ToString();
-            } set { } }
+            }
+            set { }
+        }
 
 
         override public string ToString()

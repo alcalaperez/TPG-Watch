@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using RestSharp;
 using System;
-using System.Security;
 using System.Threading.Tasks;
 using System.Web;
 using TPG.Model;
@@ -18,7 +17,7 @@ namespace TPG
 
             var response = await client.ExecuteAsync(request);
             return JsonConvert.DeserializeObject<RootObject>(response.Content);
-            
+
         }
 
         public static async Task<DepartsModel> DesparturesAsync(String codeArret)
@@ -36,7 +35,7 @@ namespace TPG
             var client = new RestClient("http://prod.ivtr.tpg.ch/");
             var destination = proDep.destinationMajuscule.Replace("+", "%2B");
 
-            var request = new RestRequest("GetTousProchainsDeparts.json?codeArret=" + proDep.codeArret + "&ligne="+ proDep.ligne + "&transporteur=tpg&destination=" + HttpUtility.HtmlEncode(destination), Method.GET);
+            var request = new RestRequest("GetTousProchainsDeparts.json?codeArret=" + proDep.codeArret + "&ligne=" + proDep.ligne + "&transporteur=tpg&destination=" + HttpUtility.HtmlEncode(destination), Method.GET);
             request.RequestFormat = DataFormat.Json;
 
             var response = await client.ExecuteAsync(request);
