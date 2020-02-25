@@ -1,6 +1,7 @@
 # TPG (Transports publics genevois) for Galaxy Watch
 You are probably late to this meeting and while you take your phone out to check the timetable... the tram walks away. Maybe you can prevent it having the last TPG info in your watch ;)
 
+* Tizen .NET framework using Xamarin forms (https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/other/tizen)
 * TPG API
 * Get the list of all tram/bus/plane stops
 * Search the stop by name (there are a lot of stops)
